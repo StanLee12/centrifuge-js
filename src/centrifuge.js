@@ -379,7 +379,7 @@ centrifugeProto._sockjsEndpoint = function () {
     if (this._config.accessToken) {
         url += "?access_token=" + this._config.accessToken;
     }
-    egret.log("connection url ===", url);
+    console.log("connection url ===", url);
     return url;
 };
 
@@ -398,7 +398,7 @@ centrifugeProto._rawWebsocketEndpoint = function () {
     if (this._config.accessToken) {
         url += "?access_token=" + this._config.accessToken;
     }
-    egret.log("connection url ===", url);
+    console.log("connection url ===", url);
     return url;
 };
 
