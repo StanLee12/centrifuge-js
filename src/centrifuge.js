@@ -389,9 +389,16 @@ centrifugeProto._rawWebsocketEndpoint = function () {
         .replace('http://', 'ws://')
         .replace('https://', 'wss://');
     url = stripSlash(url);
-    if (!endsWith(this._config.url, 'connection/websocket')) {
-        url = url + '/connection/websocket';
+    if (this._config.version) {
+        url += "/" + this._config.version;
     }
+    if (!endsWith(this._config.url, 'connection/websocket')) {
+        url = url + "/connection/websocket";
+    }
+    if (this._config.accessToken) {
+        url += "?access_token=" + this._config.accessToken;
+    }
+    egret.log("connection url ===", url);
     return url;
 };
 
