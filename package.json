@@ -1,6 +1,6 @@
 {
-  "name": "centrifuge",
-  "version": "1.4.8",
+  "name": "centrifuge-laiwan",
+  "version": "0.0.1",
   "description": "Centrifuge javascript client",
   "main": "src/centrifuge.js",
   "dependencies": {
@@ -27,7 +27,7 @@
   "author": "Alexandr Emelin",
   "repository": {
     "type": "git",
-    "url": "https://github.com/centrifugal/centrifuge-js.git"
+    "url": "git+https://github.com/centrifugal/centrifuge-js.git"
   },
   "license": "MIT",
   "bugs": {
